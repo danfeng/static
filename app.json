@@ -1,0 +1,56 @@
+
+{
+	"status":1,
+	"messages":"ok",
+	"data":[
+		{
+			"appkey":"OriginalM4",
+			"name":"OriginalM4",
+			"version":"0.1.229",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2018/09/04164106/2.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/10/18105331/www_v0.1.229.zip"
+		},
+		{
+			"appkey":"OriginalM3",
+			"name":"OriginalM3",
+			"version":"0.1.220",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2017/09/15135153/2.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/09/26095156/www_v0.1.221.zip"
+		},
+		{
+			"appkey":"icourses",
+			"name":"爱课程",
+			"version":"爱课程",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2018/04/02094104/logo.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/10/29113144/www.zip"
+		},
+		{
+			"appkey":"iflow",
+			"name":"移动办公",
+			"version":"2.0.1",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2017/12/27130051/OriginalM3.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2017/12/27122046/www.zip"
+		},
+		{
+			"appkey":"cjrfw",
+			"name":" 残疾人服务",
+			"version":"2.2.52",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2018/01/20111120/1.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/10/26134410/www.zip"
+		},
+		{
+			"appkey":"beijingcanlian",
+			"name":"北京动态更新",
+			"version":"2.1.0",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2018/10/16165104/E460467B753286CFBE98964A50CB8ED7.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/11/07112051/www.zip"
+		},
+		{
+			"appkey":"cjrfwtest",
+			"name":"测试残疾人服务",
+			"version":"2.1.78",
+			"icon":"http://112.65.142.83:7799/soops/files/iphone/apply/2018/01/23092509/1.png",
+			"url":"http://112.65.142.83:7799/soops/files/templatecode/2018/11/06121859/www.zip"
+		}
+	]
+}
