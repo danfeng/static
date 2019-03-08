@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面跳转</title>
+    <script type="application/javascript">
+
+        var url = "/pages/ci/ci";
+
+        if (navigator.userAgent.indexOf('AlipayClient') > -1) {
+            document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+            setTimeout(function (args) {
+                my.alert({
+                    content:"加载成功！！！",
+                    buttonText: '前往',
+                    success: () => {
+                        my.navigateTo({url:url});
+                    },
+                });
+            },1000);
+        } else if (navigator.userAgent.toLowerCase().indexOf('dingtalk') > -1) {
+            document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+            setTimeout(function (args) {
+                dd.alert({
+                    content:"加载成功！！！",
+                    buttonText: '前往',
+                    success: () => {
+                        dd.navigateTo({url:url});
+                     },
+                });
+            },1000);
+        }
+
+        function jumpAlipay() {
+            dd.navigateTo({url:url});
+        }
+
+        function jumpDingDing() {
+            my.navigateTo({url:url});
+        }
+    </script>
+</head>
+<body>
+<button onclick='jumpAlipay();'>[支付宝小程序]跳转页面</button>
+<button onclick='jumpDingDing();'>[钉钉]跳转页面</button>
+<hr/>
+
+</body>
+</html>
