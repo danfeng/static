@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		
+
+let uniqId = 1;
+
+function getUniqId() {
+  return uniqId++;
+}
+
+const callBackMap = {};
+
+// 通过该方法就可以在 H5 中调用 dd.alert
+window.native_alert = function() {
+  const callbackId = getUniqId();
+  callBackMap[callbackId] = {
+    success: function() {
+      console.log('成功');
+    },
+    fail: function() {
+      console.log('失败');
+    }
+  }
+  dd.postMessage({
+    d_m: 'alert',
+    params: {
+      title: '亲',
+      content: '您本月的账单已出',
+      buttonText: '我知道了',
+      callbackId
+    }
+  });
+}
+
+dd.onMessage = function(e) {
+  const { callbackId, issuccess } = e;
+  const { success, fail } = callBackMap[callbackId];
+  delete callBackMap[callbackId];
+  issuccess ? success() : fail();
+}
+
+
+	</script>
+</head>
+<body>
+	1
+</body>
+</html>
